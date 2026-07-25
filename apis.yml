@@ -1,7 +1,23 @@
 aid: cymbal
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/cymbal.png
 name: Cymbal
-description: 'Cymbal is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Cymbal was a consumer blockchain data startup founded in 2022 in Menlo Park by Eric Feng,
+  Nick Chang and others, building a "human readable" Ethereum block explorer with a visual, social interface
+  and AI-generated conversational summaries of wallets, NFTs and transactions. The company raised $18.5M in
+  2023 from investors including First Round Capital, Coinbase Ventures, Solana Ventures, Patron, Acrew and
+  GV. In July 2025 Yahoo acqui-hired the Cymbal team into a new AI research group. Cymbal published no public
+  developer API or documentation surface; this API Evangelist profile is a GV-portfolio company record.'
 url: https://raw.githubusercontent.com/api-evangelist/cymbal/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,19 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+x-status: acquired
+x-acquired-by: Yahoo
+x-acquired-date: '2025-07'
 tags:
 - Company
 - Consumer
+- Blockchain
+- Ethereum
+- Block Explorer
+- Web3
+- Crypto Data
+- Acquired
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/cymbal-domain-security.yml
 - type: Website
   url: https://cymbal.xyz
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
